@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tattoo Studios</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  	
+  	<meta name="keywords" content="">
+  	<meta name="description" content="">
+
+  	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<!--Logo de Pestaña-->
+	<link rel="icon" type="image/png" href="img/productos.jpg">
+
+	<!--Hoja de Estilos CSS-->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"> <!---->
+
+	<!--Archivo Responsivo-->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<!--Iconos-->
+	<link rel="stylesheet" type="text/css" href="css/iconos.css">
+
+	<!--Libreria de javaescript-->
+	<script type="text/javascript" src="jss/lightbox-plus-jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<!-- Social
+   ================================================== -->
+   <link rel="stylesheet" href="cs/estilos.css">
+   <link rel="stylesheet" href="cs/iconos.css">
+
+	<!-- Google web font 
+   ================================================== --> 
+   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Tarjetas 3D Galeria 1
+   ================================================== --> 
+ 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="Tarjetas 3D/estilos.css">
+
+	<!-- Touch Slider 3D Galeria 2
+   ================================================== --> 
+	<link rel="stylesheet" href="Touch Slider/swiper.min.css">
+	<link rel="stylesheet" href="Touch Slider/style.css">
+
+	Touch Slider
+
+</head>
+
+<!-- Script de Desplazamiento de la Pagina Con el Menú-->
+<script>
+	$(document).ready(function(){
+
+		$("#inicio").css({"height":$(window).height() + "px"})
+		var menu=1;
+		$("#abrir_menu,#cerrar_menu").click(function(){
+			if(menu==1){
+				$("#menu").css({"left":"0"});
+				menu=0;
+			}
+			else{
+				$("#menu").css({"left":"-100%"});
+				menu=1;
+			}
+		});
+
+		$(function(){
+			$('a[href*=#]').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname){
+					var $target = $(this.hash);
+					$target= $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+					if ($target.length) {
+						var targetOffset = $target.offset().top;
+						$('html,body').animate({scrollTop: targetOffset}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+
+	});
+</script>
+<!--Fin de Script de Desplazamiento de la pagina con el Menu-->
+
+<body bgcolor="#424242">
+	<header> <!-- header: Cabecera-->
+		
+		<section id="logo"> <!-- section: Contenido-->
+			<h2><img src="img/productos.jpg" width="20" height="20">Freak Zombie<img src="img/productos.jpg" width="20" height="20"></h2>
+			<span id="abrir_menu" class="icon-menu"></span>
+		</section>
+
+		<section id="menu">
+			<nav><span id="cerrar_menu" class="icon-cross"></span></nav>
+			<center><ul>
+				<a href="#">Inicio</a> <!--para ir a un link-->
+				<a href="#quien">Galería 1</a>
+				<a href="#productos">Galeria 2</a>
+				<a href="#contacto">Contáctanos</a>
+			</ul></center>
+		</section>
+	</header>
+
+<!--INICIO-->
+	<section id="inicio">
+		<center>
+			<div class="slider">
+				<ul>
+					<li><img src="img/slider1.jpg" alt="" width="420" height="460"></li>
+					<li><img src="img/slider2.jpg" alt="" width="420" height="460"></li>
+					<li><img src="img/slider3.jpg" alt="" width="420" height="460"></li>
+				</ul>
+			</div>
+			<br><br>
+		</center>		
+	</section>
+
+	<img src="vid.mp4" alt="">
+<!--FIN INICIO-->	
+
+<!--GALERIA 1 TARJETAS 3D-->
+	<section id="quien">
+		<center>
+			<section id="quien-main"><br><br><br>
+				<h3>Galeria 1</h3>
+				<p style="color: #fff;">Realidad Aumentada / Sigue Nuestro Canal "AppCibernetica" en HP Reveal</p>
+
+				<div class="contenedor">
+
+					<div class="contenedor_tarjeta">
+						<figure id="tarjeta">
+							<img src="img/t1.jpg" class="frontal" alt="">
+							<figcaption class="trasera">
+								<h2 class="titulo">Info x</h2>
+								<hr>
+								<p>Info x</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="contenedor_tarjeta">
+						<figure id="tarjeta">
+							<img src="img/t2.jpg" class="frontal" alt="">
+							<figcaption class="trasera">
+								<h2 class="titulo">info x</h2>
+								<hr>
+								<p>info x</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="contenedor_tarjeta">
+						<figure id="tarjeta">
+							<img src="img/t3.jpg" class="frontal" alt="">
+							<figcaption class="trasera">
+								<h2 class="titulo">info x</h2>
+								<hr>
+								<p>info x</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="contenedor_tarjeta">
+						<figure id="tarjeta">
+							<img src="img/t4.jpg" class="frontal" alt="">
+							<figcaption class="trasera">
+								<h2 class="titulo">info x</h2>
+								<hr>
+								<p>info x</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="contenedor_tarjeta">
+						<figure id="tarjeta">
+							<img src="img/t5.jpg" class="frontal" alt="">
+							<figcaption class="trasera">
+								<h2 class="titulo">info x</h2>
+								<hr>
+								<p>info x</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="contenedor_tarjeta">
+						<figure id="tarjeta">
+							<img src="img/t6.jpg" class="frontal" alt="">
+							<figcaption class="trasera">
+								<h2 class="titulo">info x</h2>
+								<hr>
+								<p>info x</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="contenedor_tarjeta">
+						<figure id="tarjeta">
+							<img src="img/t7.jpg" class="frontal" alt="">
+							<figcaption class="trasera">
+								<h2 class="titulo">info x</h2>
+								<hr>
+								<p>info x</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="contenedor_tarjeta">
+						<figure id="tarjeta">
+							<img src="img/t8.jpg" class="frontal" alt="">
+							<figcaption class="trasera">
+								<h2 class="titulo">info x</h2>
+								<hr>
+								<p>info x</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="contenedor_tarjeta">
+						<figure id="tarjeta">
+							<img src="img/t9.jpg" class="frontal" alt="">
+							<figcaption class="trasera">
+								<h2 class="titulo">info x</h2>
+								<hr>
+								<p>info x</p>
+							</figcaption>
+						</figure>
+					</div>
+
+				</div>
+				
+			</section>
+		</center>
+	</section>
+<!--FIN GALERIA 1 TARJETAS 3D-->
+
+<!--GALERIA 2 TOUCH SLIDER-->
+	<section id="productos">
+		<center>
+			<section id="productos-main"><br><br><br>
+				<h3>Galeria 2</h3>
+				<h4>Otros Diseños<br>de nuestra tienda</h4>
+				<br><br>
+				<div class="swiper-container">
+    	<div class="swiper-wrapper">
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t10.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t11.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t12.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t13.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t14.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t15.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t16.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t17.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t18.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t19.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t20.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t21.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t22.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t23.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t24.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t25.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t26.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t27.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t28.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t29.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t30.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t31.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t32.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t33.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t34.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t35.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t36.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t37.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t38.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t39.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t40.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t41.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t42.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t43.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t44.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t45.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t46.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t47.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+      		<div class="swiper-slide">
+      			<div class="imgBx">
+      				<img src="img/t48.jpg" style="width: 300px; height: 290px;">
+		      	</div>
+      			<div class="details">
+      				<h3 style="color: black;">Sheen Alb <br><span>Web Diseñada</span></h3>
+		      	</div>
+      		</div>
+
+    	</div>
+    	<!-- Add Pagination -->
+    	<div class="swiper-pagination"></div>
+  	</div>
+
+	<script type="text/javascript" src="Touch Slider/swiper.min.js"></script>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 60,
+        stretch: 0,
+        depth: 500,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+
+			</section>
+		</center>
+	</section>
+<!--GALERIA 2 TOUCH SLIDER-->
+
+	<section id="contacto">
+		<center>
+			<section id="contacto-main"><br><br><br>
+				<h3>Contáctanos</h3>
+				<form method="post" action="contacto.php">
+					<input type="text" name="nombre" placeholder="Nombre..."/><br>
+					<input type="text" name="asunto" placeholder="Asunto..."/><br>
+					<input type="text" name="correo" placeholder="Correo..."/><br>
+					<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje..."></textarea><br>
+					<input id="boton" type="submit" value="Enviar" />
+				</form>
+			</section>
+		</center>
+	</section>
+
+	<footer>
+		<section id="footer">
+			<center>
+				<h4 style="color: #FFFFFF">Datos de Tattoo Studio <br>aqui se debe colocar <br>una pequeña informacion, <br>direccion o algo mas</h4>
+				
+			</center>
+		</section>
+		<section id="creditos">
+			<h5 style="color: black;">Copyright © 2018 / Programación Web Sheen (SWAS)</h5>
+		</section>
+	</footer>
+
+	<!--  Social
+================================================== -->
+  <div class="social">
+    <ul>
+      <li><a href="http://www.facebook.com/sheenwilmer.alburquerquesalas" target="_blank" class="icon-facebook"></a></li>
+      <li><a href="http://www.twitter.com/MagnateSheen" target="_blank" class="icon-twitter"></a></li>
+      <li><a href="http://www.instagram.com/sheenkisuke1/" target="_blank" class="icon-instagram"></a></li>
+      <li><a href="http://web.telegram.org/#/im?p=@SheenAlburquerque" target="_blank" class="icon-telegram"></a></li>
+      <li><a href="mailto:sheen1386@gmail.com" class="icon-mail"></a></li>
+    </ul>
+  </div>
+</body>
+</html>
